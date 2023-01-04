@@ -333,7 +333,6 @@ header .bg {
     background-size: cover;
     text-align: center;
     align-items: center;
-    z-index: 999999999999;
     position: relative;
     display: inline-block;
     /* width: 100%; */
@@ -351,4 +350,28 @@ header .bg {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  @media (max-width:767px) {
+    .title{
+        min-width:368px;
+        height: 60px;
+    }
+
+    .title h1{
+        height: 60px;
+        font-size: 32px;
+    }
+  }
+  @media (max-width:411px) {
+    .title{
+        min-width:300px;
+        height: 49px;
+    }
+
+    .title h1{
+        height: 49px;
+        font-size: 32px;
+    }
+
   }
