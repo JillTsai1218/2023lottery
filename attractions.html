@@ -1,0 +1,585 @@
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    <title>國道地雷路段/熱門景點即時影像 │TVBS新聞網</title>
+
+    <meta name="Keywords" content="TVBS,TVBS新聞網,TVBS NEWS,連假,堵車,尖峰,塞車,擁塞,車潮,地雷路段,過年,連假,年假,路況,國道,中山高速公路,交流道,南下,北上,國道一號,國道四號,國道一號,國道五號,玩樂,即時路況影像,交通,熱門景點,武陵農場,陽明山,影像,國道3甲">
+
+    <meta name="description" content="包含國道一號、國道三號、國道五號與國道十號之南下與北上即時路況影像，可快速查詢塞車與車輛行駛狀況。另外，包含武陵農場、陽明山國家公園擎天崗草原與遠眺七星山美景、阿里山、雪霸國家公園與福壽山農場等熱門景點即時影像。">
+
+    <link rel="icon" href="https://cc.tvbs.com.tw/2017news/prd/images/favicon.ico?v=009" type="image/icon">
+
+<!-- for Facebook -->
+
+    <meta property="og:title" content="國道地雷路段/熱門景點即時影像 │TVBS新聞網">   
+
+    <meta property="og:type" content="website"/>
+
+    <meta property="og:url" content="網頁網址"/>
+
+     <meta property="og:image" content=" FB分享圖路徑"/>         
+
+    <meta property="og:site_name" content="TVBS">
+
+    <meta property="og:description" content="包含國道一號、國道三號、國道五號與國道十號之南下與北上即時路況影像，可快速查詢塞車與車輛行駛狀況。另外，包含武陵農場、陽明山國家公園擎天崗草原與遠眺七星山美景、阿里山、雪霸國家公園與福壽山農場等熱門景點即時影像。">  
+
+     <meta property="article:author" content="https://www.facebook.com/tvbsfb"/>
+
+     <meta property="article:publisher" content="https://www.facebook.com/tvbsfb"/>
+
+    <meta property="fb:admins" content="1557798208">
+
+    <meta property="fb:app_id" content="808502559243231">
+
+     <meta property="fb:pages" content="220050085932" />
+
+     <meta property="fb:pages" content="419217714880192" />
+
+     <meta property="fb:pages" content="435874166575033" />
+
+     <meta property="fb:pages" content="111515882197852" />
+
+     <meta property="fb:pages" content="103776576325700" />
+
+     <meta property="fb:pages" content="425886554169130" />
+
+     <meta property="fb:pages" content="222330954465485" />
+
+     <meta property="fb:pages" content="103816386321776" />
+
+
+
+<!-- for Google -->
+
+    <meta name="description" content="包含國道一號、國道三號、國道五號與國道十號之南下與北上即時路況影像，可快速查詢塞車與車輛行駛狀況。另外，包含武陵農場、陽明山國家公園擎天崗草原與遠眺七星山美景、阿里山、雪霸國家公園與福壽山農場等熱門景點即時影像。">   
+
+    <meta name="author" content="TVBS">
+
+    <meta name="copyright" content="TVBS">
+
+    <meta name="application-name" content="TVBS">
+
+    <meta name="URL" content="網頁網址">
+
+     <meta name="keywords" content="TVBS,TVBS新聞網,TVBS NEWS,連假,堵車,尖峰,塞車,擁塞,車潮,地雷路段,過年,連假,年假,路況,國道,中山高速公路,交流道,南下,北上,國道一號,國道四號,國道一號,國道五號,玩樂,即時路況影像,交通,熱門景點,武陵農場,陽明山,影像,國道3甲"/>
+
+    <meta name="medium" content="mult" />
+
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <link rel="canonical" href="網頁網址">
+
+    <link rel="image_src" type="image/jpeg" href="FB分享圖路徑"/>
+
+<!--共用CSS-->
+<link rel="stylesheet" type="text/css" href="css/attractions.css" media="screen">
+<!--共用CSSed-->
+
+ <!-- owl.carousel -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"></link> -->
+
+<link rel="stylesheet" type="text/css" href="css/owlcarousel/owl.carousel.css" media="screen">
+
+	
+<!--外掛 js Link-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!--外掛 js Link ed-->
+
+<!--js Link-->
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+<script type="text/javascript" src="js/attractions.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+
+<!--js Link ed-->
+
+<!--本頁樣式-->
+<style>
+</style>
+<!--本頁樣式ed-->
+<!--本頁js-->	
+<script type="text/javascript">
+$(document).ready(function(){
+
+  if ($(window).width() > 767) {
+    $(window).scroll(function(){
+        //向下滾動logo_box增加陰影
+      if($(window).scrollTop() > 400 ){
+          $('.logo_box').css({backgroundColor: 'rgba(0, 0, 0, 0.3)'});
+      }else{
+          $('.logo_box').css({backgroundColor: 'rgba(0, 0, 0, 0)'});
+      }
+      //map圖隨著捲動，往上蓋過上面區塊
+    //   if($(window).scrollTop() > 10 && $(window).scrollTop() < 500) {
+    //     $(".map_bg").css("position","relative");
+    //     $(".map_bg").css("margin-top",-$(window).scrollTop());
+    //   }
+    });
+  }
+  //螢幕width改變 重新reload頁面
+
+//手機版 隨著捲動，影片往上蓋過上面banner區塊，並fix在上面
+var $fv=$('.freeway_video').offset().top;
+var freeway_video_c=$('.freeway_video').clone();
+$('.video_fix .frame_box').append(freeway_video_c);
+
+function video_scroll(){
+    $(window).scroll(function(){    
+        if ($(window).width() < 500) {   
+            if($(window).scrollTop() > $fv){
+                $('.video_fix').show();      
+            }else{
+                $('.video_fix').hide();
+            } 
+        }else{
+            $('.video_fix').hide();
+        }    
+    });
+}
+video_scroll();
+$(window).resize(function(){video_scroll();});
+
+
+
+//live圖片閃爍
+ var counter = 0;
+function cycle(){
+    if(counter%2==0){
+        $(".live_div").css("visibility","hidden");
+        
+    }else{
+        $(".live_div").css("visibility","visible");
+    } 
+    counter++;
+}
+setInterval(cycle, 500 );
+
+
+
+
+});
+</script>
+<!--本頁js ed-->		
+</head>
+<body>
+<!-- 遮罩層 -->
+<div class="child_box"></div>
+<!-- 遮罩層 ed-->
+<!--container主架構-->
+<!--GO~Top-->
+<div id="back"> 
+<div id="back-img1"><img src="images/箭頭上-1.svg" alt="top"><img class="car" src="images/Icon awesome-car-alt.svg" alt="top"></div>
+</div>
+<!--GO~Top end-->
+<div class="container">
+<!--header -->
+<header>
+    <div class="bg">
+        <div class="logo_box">
+            <div class="logo"><a href="https://news.tvbs.com.tw/" rel="noopener" target="_blank"><img src="images/tvbs_black.svg" alt="logo"></a></div>
+           <div class="community">
+               <div class="attractions">
+                   <a href="##" >
+                       <div class="live_div">
+                           <img src="images/LIVE.svg" alt="top">
+                       </div>
+                       <span>國道路況</span>
+                   </a>
+                </div>    
+               <a class="community_icon" href="https://www.facebook.com/sharer/sharer.php?u=網址"><img src="images/facebook_black.svg" alt="top"></a>
+               <a class="community_icon"  href="https://social-plugins.line.me/lineit/share?text=標題&url=網址"><img src="images/line_black.svg" alt="top"></a>
+            </div>  
+        </div>     
+        <div class="contxt scroll1">
+            
+            <div class="title">
+                <h1>旅遊景點即時影像</span></h1>
+            </div>
+            
+        </div>          
+    </div>
+</header>
+<!--header ed-->
+<!--main-->
+<main>
+<article>
+    <div class="map_bg">
+        <div class="video_fix"><div class="frame_box"></div></div>
+            <div class="frame_box">  
+                <div class="freeway_video">
+                    <!-- <img class="" src="images/attractions_video.PNG" style="width: 100%;" /> -->
+                    <iframe src="https://www.youtube.com/embed/MnODaP-1JaE" frameborder="0"></iframe>
+                    <!-- <iframe width="800px" height="450px" src="https://www.youtube.com/embed/lV-HlYijPYY" frameborder="0"></iframe> -->
+                        <div class="freeway_video_txt">
+                            <div class="txt_left">
+                                <h2>陽明山擎天崗</h2>
+                            </div>
+                            <div class="source">
+                                <span>影像來源：陽明山國家公園</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+    <div class="attractions_area">
+        <div class="frame_box3">
+            <div class="choose_area">
+                <div class="triangle">
+                    <div class="triangle_img">
+                            <p>更多景點影像</p>
+                            <img src="images/location_icon.svg" alt="">
+                    </div>
+                    <div class="location_img">
+                    </div>
+                </div>
+                <div class="attractions_pc">
+                <ul>
+                    <li class="attractions_box">
+                        <a href="##">
+                            <div class="attractions_img">
+                                <img src="images/武陵－京華吊橋櫻花林.jpg">
+                            </div>
+                            
+                        </a>
+                        <div class="attractions_txt">
+                            <h2 >武陵 - 京華吊橋櫻花林</h2>
+                        </div>
+                    </li>
+                    <li class="attractions_box active">
+                        <a href="##">
+                            <div class="attractions_img">
+                                <img src="images/陽明山－擎天崗草原.jpg">
+                            </div>
+                            
+                        </a>
+                        <div class="attractions_txt">
+                            <h2 >陽明山 - 擎天崗草原</h2>
+                        </div>
+                    </li>
+                    <li class="attractions_box">
+                        <a href="##">
+                            <div class="attractions_img">
+                                <img src="images/陽明山－遠眺七星山.jpg">
+                            </div>
+                            
+                        </a>
+                        <div class="attractions_txt">
+                            <h2 >陽明山 - 遠眺七星山</h2>
+                        </div>
+                    </li>
+                    <li class="attractions_box">
+                        <a href="##">
+                            <div class="attractions_img">
+                                <img src="images/阿里山－二延平步道.jpg">
+                            </div>
+                            
+                        </a>
+                        <div class="attractions_txt">
+                            <h2 >阿里山 - 二延平步道</h2>
+                        </div>
+                    </li>
+                    <li class="attractions_box">
+                        <a href="##">
+                            <div class="attractions_img">
+                                <img src="images/阿里山－太平雲梯.jpg">
+                            </div>
+                            
+                        </a>
+                        <div class="attractions_txt">
+                            <h2 >阿里山 - 太平雲梯</h2>
+                        </div>
+                    </li>
+                    <li class="attractions_box">
+                        <a href="##">
+                            <div class="attractions_img">
+                                <img src="images/阿里山－牛埔仔大草原.jpg">
+                            </div>
+                            
+                        </a>
+                        <div class="attractions_txt">
+                            <h2 >阿里山 - 牛埔仔大草原</h2>
+                        </div>
+                    </li>
+                    <li class="attractions_box">
+                        <a href="##">
+                            <div class="attractions_img">
+                                <img src="images/雪霸國家公園－雪見遊憩區.jpg">
+                            </div>
+                            
+                        </a>
+                        <div class="attractions_txt">
+                            <h2 >雪霸國家公園 - 雪見遊憩區</h2>
+                        </div>
+                    </li>
+                    <li class="attractions_box">
+                        <a href="##">
+                            <div class="attractions_img">
+                                <img src="images/雪霸國家公園－觀霧遊憩區.jpg">
+                            </div>
+                            
+                        </a>
+                        <div class="attractions_txt">
+                            <h2 >雪霸國家公園 - 觀霧遊憩區</h2>
+                        </div>
+                    </li>
+                    <li class="attractions_box">
+                        <a href="##">
+                            <div class="attractions_img">
+                                <img src="images/福壽山農場－天池景觀步道.jpg">
+                            </div>
+                            
+                        </a>
+                        <div class="attractions_txt">
+                            <h2 >福壽山農場 - 天池景觀步道</h2>
+                        </div>
+                    </li>
+                    <li class="attractions_box">
+                        <a href="##">
+                            <div class="attractions_img">
+                                <img src="images/福壽山農場－鴛鴦湖步道.jpg">
+                            </div>
+                            
+                        </a>
+                        <div class="attractions_txt">
+                            <h2 >福壽山農場 - 鴛鴦湖步道</h2>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+
+            </div>
+        <!-- <div class="source_name"><p>資料來源：交通部高速公路局</p></div> -->
+        </div>
+    </div>
+
+
+
+        
+    </div>
+    <div class="issue_area">
+        <div class="frame_box2">
+        <div class="suggest_title"><p>推薦給您</p></div>
+        <div class="issue_list">
+            <div class="issue_title"><p>車壇報好康</p></div>
+
+            <div class="issue_news">
+            <div class="list">
+                <ul>
+                    <li>
+                        <a href="#">				
+                        <div class="box">
+                        <div class="img">
+                        <div class="list_play"></div>
+                        <div class="overlay-color"></div><img src="images/20201106102127-3498d9ee.jpg">
+                        </div>
+                        <div class="txt_box">
+                            <h3 class="txt">秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響</h3>
+                            <div class="time">1 分鐘前</div>
+                        </div>
+                        </div>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="#">
+                        <div class="box">
+                        <div class="img">
+                        <div class="overlay-color"></div><img src="images/20201106102127-3498d9ee.jpg">
+                        </div>
+                        <div class="txt_box">
+                            <h3 class="txt">秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大　陳吉仲籲莫用毒豬一句話影響</h3>
+                            <div class="time">1 分鐘前</div>
+                        </div>
+                        </div>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="#">
+                        <div class="box">
+                        <div class="img">
+                        <div class="overlay-color"></div><img src="images/20201106102127-3498d9ee.jpg">
+                        </div>
+                        <div class="txt_box">
+                            <h3 class="txt">秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響</h3>                        
+                            <div class="time">1 分鐘前</div>
+                        </div>
+                        </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">				
+                        <div class="box">
+                        <div class="img">
+                        <div class="list_play"></div>
+                        <div class="overlay-color"></div><img src="images/20201106102127-3498d9ee.jpg">
+                        </div>
+                        <div class="txt_box">
+                            <h3 class="txt">秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響</h3>
+                            <div class="time">1 分鐘前</div>
+                        </div>
+                        </div>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="#">
+                        <div class="box">
+                        <div class="img">
+                        <div class="overlay-color"></div><img src="images/20201106102127-3498d9ee.jpg">
+                        </div>
+                        <div class="txt_box">
+                            <h3 class="txt">秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大　陳吉仲籲莫用毒豬一句話影響</h3>
+                            <div class="time">1 分鐘前</div>
+                        </div>
+                        </div>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="#">
+                        <div class="box">
+                        <div class="img">
+                        <div class="overlay-color"></div><img src="images/20201106102127-3498d9ee.jpg">
+                        </div>
+                        <div class="txt_box">
+                            <h3 class="txt">秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響</h3>                        
+                            <div class="time">1 分鐘前</div>
+                        </div>
+                        </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>	
+            </div>
+            
+            <div class="more">
+                <a href="##"><img src="images/Icon material-keyboard-arrow-down.svg"><span>&nbsp;&nbsp;看更多</span></a>
+            </div>
+        </div> 
+         <div class="issue_list">
+            <div class="issue_title"><p>電動車新紀元</p></div>
+
+            <div class="issue_news">
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a href="#">				
+                            <div class="box">
+                            <div class="img">
+                            <div class="list_play"></div>
+                            <div class="overlay-color"></div><img src="images/20201106102127-3498d9ee.jpg">
+                            </div>
+                            <div class="txt_box">
+                                <h3 class="txt">秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響</h3>
+                                <div class="time">1 分鐘前</div>
+                            </div>
+                            </div>
+                            </a>
+                        </li>
+            
+                        <li>
+                            <a href="#">
+                            <div class="box">
+                            <div class="img">
+                            <div class="overlay-color"></div><img src="images/20201106102127-3498d9ee.jpg">
+                            </div>
+                            <div class="txt_box">
+                                <h3 class="txt">秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大　陳吉仲籲莫用毒豬一句話影響</h3>
+                                <div class="time">1 分鐘前</div>
+                            </div>
+                            </div>
+                            </a>
+                        </li>
+            
+                        <li>
+                            <a href="#">
+                            <div class="box">
+                            <div class="img">
+                            <div class="overlay-color"></div><img src="images/20201106102127-3498d9ee.jpg">
+                            </div>
+                            <div class="txt_box">
+                                <h3 class="txt">秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響</h3>                        
+                                <div class="time">1 分鐘前</div>
+                            </div>
+                            </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#">				
+                            <div class="box">
+                            <div class="img">
+                            <div class="list_play"></div>
+                            <div class="overlay-color"></div><img src="images/20201106102127-3498d9ee.jpg">
+                            </div>
+                            <div class="txt_box">
+                                <h3 class="txt">秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響</h3>
+                                <div class="time">1 分鐘前</div>
+                            </div>
+                            </div>
+                            </a>
+                        </li>
+            
+                        <li>
+                            <a href="#">
+                            <div class="box">
+                            <div class="img">
+                            <div class="overlay-color"></div><img src="images/20201106102127-3498d9ee.jpg">
+                            </div>
+                            <div class="txt_box">
+                                <h3 class="txt">秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響秋鬥反萊豬聲量大　陳吉仲籲莫用毒豬一句話影響</h3>
+                                <div class="time">1 分鐘前</div>
+                            </div>
+                            </div>
+                            </a>
+                        </li>
+            
+                        <li>
+                            <a href="#">
+                            <div class="box">
+                            <div class="img">
+                            <div class="overlay-color"></div><img src="images/20201106102127-3498d9ee.jpg">
+                            </div>
+                            <div class="txt_box">
+                                <h3 class="txt">秋鬥反萊豬聲量大陳吉仲籲莫用毒豬一句話影響</h3>                        
+                                <div class="time">1 分鐘前</div>
+                            </div>
+                            </div>
+                            </a>
+                        </li>
+    
+                    </ul>
+                </div>	
+                </div>
+
+            <div class="more">
+                <a href="##"><img src="images/Icon material-keyboard-arrow-down.svg"><span>&nbsp;&nbsp;看更多</span></a>
+            </div>
+        </div>
+    </div>
+    </div>
+</article>
+</main>
+<!--main ed-->
+<!--footer-->
+<footer>
+    <div class="frame_box">
+        <div class="community"> 
+            <a class="community_icon" href="https://www.facebook.com/sharer/sharer.php?u=網址"><img src="images/facebook_black.svg" alt="top"></a>
+            <a class="community_icon"  href="https://social-plugins.line.me/lineit/share?text=標題&url=網址"><img src="images/line_black.svg" alt="top"></a>
+         </div>  
+
+        <h6> © TVBS Media Inc. All Rights Reserved.<br>台北市內湖區瑞光路451號 | 聯利媒體股份有限公司 </h6>
+    </div>    
+</footer>
+<!--footer ed-->
+</div>
+<!--container主架構ed-->
+</div>
+</body>
+</html>
