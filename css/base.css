@@ -252,8 +252,9 @@ a:hover .overlay-color {
   
   @media (max-width: 768px) {
     .logo_box {
-      position: absolute;
-      align-items: start;
+      /* position: absolute;
+      align-items: start; */
+
       /* margin-top: 10px; */
     }
     /* .logo_box .community a {
@@ -267,20 +268,7 @@ a:hover .overlay-color {
   
   /* 右上角熱門景點*/
 
-  @media (max-width: 768px) {
-    .logo_box {
-      position: absolute;
-    }
-    /* .logo_box .community a {
-      width: 30px;
-    } */
-  
-    /* .logo_box .community {
-      margin-top: 105px;
-      margin-right: -15px;
-    } */
-  
-  }
+ 
 
   
   @media (max-width: 397px) {
@@ -363,7 +351,46 @@ header .bg {
         font-size: 32px;
     }
   }
+  @media (max-width:447px) {
+    header .bg {
+        margin-top: 81px;
+        background: url(../images/bg_m.png) top no-repeat;
+        width: 100%;
+ 
+        height: 225px;
+        height: 306px;
+        /* background-size: auto; */
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+      .contxt{
+        /* margin-top: -1000000px; */
+        position: absolute;
+        /* left:calc( 100% - (368px / 2) ); */
+        /* left:48%; */
+        top:50px;
+        /* top:0px; */
+        left: 20px;
+        left: calc((100vw - 368px) / 2);
+        /* left:50px; */
+        /* left:100%; */
+      }
+  }
   @media (max-width:411px) {
+    .contxt{
+        /* margin-top: -1000000px; */
+        position: absolute;
+        /* left:calc( 100% - (368px / 2) ); */
+        /* left:48%; */
+        top:50px;
+        /* top:0px; */
+        left: 20px;
+        left: calc((100vw - 300px) / 2);
+        /* left:50px; */
+        /* left:100%; */
+      }
     .title{
         min-width:300px;
         height: 49px;
@@ -373,5 +400,36 @@ header .bg {
         height: 49px;
         font-size: 32px;
     }
+
+  }
+
+  @media (max-width:375px) {
+    /* header .bg {
+        background: url(../images/bg_m.png) top no-repeat;
+        width: 100%;
+        height: 163px;
+        height: 338px;
+        background-size: auto;
+        display: flex;
+        align-items: center;
+      } */
+    .title{
+        min-width:300px;
+        height: 49px;
+    }
+
+    .title h1{
+        height: 49px;
+        font-size: 32px;
+    }
+
+  }
+  .frame_box{
+    margin-top: -100px;
+  }
+  .frame_box .btns a{
+    display: inline-block;
+    border:1px solid black;
+    border-radius: 24px;
 
   }
