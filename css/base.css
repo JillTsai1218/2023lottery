@@ -407,8 +407,12 @@ header .bg {
     box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
     margin-right: 16px;
     color: #999999;
+
     font-weight: bolder;
     background-color: #FFFFFF;
+  }
+  .frame_box .btns a h2{
+    font-size: 18px;
   }
   .frame_box .btns a:nth-child(3){
     margin-right: 0px;
@@ -435,8 +439,10 @@ header .bg {
   }
   @media (max-width:349px) {
     .frame_box .btns a{
-        font-size: 14px;
         margin-right: 8px;
+      }
+    .frame_box .btns a h2{
+        font-size: 14px;
       }
   }
 /* 期數下拉選單 */
