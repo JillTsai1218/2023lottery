@@ -197,7 +197,7 @@ a:hover .overlay-color {
   }
 @media (max-width: 1080px) {
   .frame_box {
-    width: 500px;
+    width: 700px;
     margin: 0 auto;
   }
 }
@@ -206,6 +206,7 @@ a:hover .overlay-color {
   .frame_box {
     box-sizing: border-box;
     width: 384px;
+    width: 600px;
     margin: 0 auto;
   }
 }
@@ -458,6 +459,7 @@ header .bg {
   .frame_box .information{
     text-align: center;
     margin-top: 8px;
+    margin-bottom: 16px;
   }
   .frame_box .information p{
     font-weight: bolder;
@@ -471,14 +473,17 @@ header .bg {
   .frame_box .lottery_lists .lottery{
    padding: 24px;
     background-color: #F5F5F5;
+    margin-bottom: 16px;
   }
   .frame_box .lottery_lists .lottery .lottery_title{
     display: flex;
     justify-content: space-between;
     font-weight: bolder;
+    font-size: 18px;
   }
   .frame_box .lottery_lists .lottery .list{
     display: flex;
+    margin-top: 37px;
   }
   .frame_box .lottery_lists .lottery .list .num{
     width: 86px;
@@ -491,4 +496,58 @@ header .bg {
     font-size: 32px;
     font-weight: bolder;
     margin-right: 16px;
+  }
+  .frame_box .lottery_lists .lottery .list .special{
+    background-color: #E15D34;
+    color: #ffffff;
+    position: relative;
+    margin-right: 0px;
+  }
+  .frame_box .lottery_lists .lottery .list .special .small_title{
+    position: absolute;
+    top:-20px;
+    color: #E15D34;
+    font-size: 12px;
+  }
+  @media (max-width: 1080px) {
+    .frame_box .lottery_lists .lottery .list .num{
+      height: 76px;
+    }
+
+  }
+  @media (max-width: 767px) {
+    .frame_box .lottery_lists .lottery .list{
+      display: flex;
+     justify-content: center;
+    }
+    .frame_box .lottery_lists .lottery .list .num{
+      width: 44px;
+      height: 43px;
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 640px) {
+
+  }
+  @media (max-width: 457px) {
+    .frame_box .lottery_lists .lottery .list .num{
+       margin-right: 4px;
+    }
+    .frame_box .lottery_lists .lottery .list .special{
+      margin-right: 0px;
+    }
+  }
+  @media (max-width: 383px) {
+    .frame_box .lottery_lists .lottery{
+      padding: 24px 20px;
+     }
+     .frame_box .lottery_lists .lottery .lottery_title{
+      font-size: 16px;
+    }
+    .frame_box .lottery_lists .lottery .list .num{
+      width: 36px;
+      height: 35px;
+      font-size: 14px;
+    }
+
   }
