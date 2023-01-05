@@ -52,7 +52,7 @@ a:hover {
   color: #e62320;
 }
 /*去除input默認樣式*/
-textarea,
+/* textarea,
 text,
 select,
 input {
@@ -61,7 +61,7 @@ input {
   -o-appearance: none;
   appearance: none;
   border: 1px #ff9398 solid;
-}
+} */
 /*去除 Chrome focus 時外框*/
 input:focus {
   outline: 0;
@@ -419,6 +419,7 @@ header .bg {
   }
   .frame_box .btns .active{
     background-color: #E15D34;
+    border:1px solid #E15D34;
     color: #FFFFFF;
   }
   @media (max-width:447px) {
@@ -441,4 +442,53 @@ header .bg {
         font-size: 14px;
         margin-right: 8px;
       }
+  }
+/* 期數下拉選單 */
+.frame_box .dropdown{
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 24px;
+}
+  .frame_box .dropdown select{
+    border-radius: 8px;
+    width: 202px;
+    height: 40px;
+  }
+  .frame_box .information{
+    text-align: center;
+    margin-top: 8px;
+  }
+  .frame_box .information p{
+    font-weight: bolder;
+    font-size: 16px;
+  }
+  .frame_box .information span{
+    color:#999999;
+    font-size: 12px;
+  }
+  /* 樂透號碼列表 */
+  .frame_box .lottery_lists .lottery{
+   padding: 24px;
+    background-color: #F5F5F5;
+  }
+  .frame_box .lottery_lists .lottery .lottery_title{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+  }
+  .frame_box .lottery_lists .lottery .list{
+    display: flex;
+  }
+  .frame_box .lottery_lists .lottery .list .num{
+    width: 86px;
+    height: 85px;
+    background-color: #F9C644;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bolder;
+    margin-right: 16px;
   }
