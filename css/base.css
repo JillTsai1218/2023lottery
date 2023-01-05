@@ -161,25 +161,25 @@ a:hover .overlay-color {
   display: none;
   cursor: pointer;
   padding: 0;
-
-  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #F9C644;
+  background: #FFFFFF;
   border-radius: 3px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
 }
 
 #back-img1 {
   cursor: pointer;
-  width: 40px;
   display: block;
 }
 
-#back #back-img1 .car {
-  width: 20.43px;
-  margin-bottom: 10px;
-}
 
 #back-img1 img {
-  width: 22.43px;
-  margin-top: 10px;
+  /* width: 22.43px; */
+  width: 18px;
+  margin-top: calc((46px - 10.8px)/2);
+
 }
 /*--gotoTop end--*/
 
@@ -558,7 +558,7 @@ header .bg {
   }
 
 
-  /*footer*/
+/*footer*/
 footer{margin-top:50px;width:100%;padding:20px 15px;background-color:#F9C644;overflow:hidden;color:#000000;text-align:center;box-sizing: border-box;}
 footer small{}
 footer .logo_box{margin-bottom:5px;}
@@ -566,7 +566,7 @@ footer .logo_box li{width:30px;display:inline-block;vertical-align:top;padding-t
 footer .logo_box li:first-child{width:80px;padding-top:0;margin-right:0;}
 
 @media (max-width:767px) {
-    footer{margin-top:80px;}
+    footer{margin-top:34px;}
     footer small{font-size:12px!important;} 
 }
 /*footer ed*/
