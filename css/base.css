@@ -273,7 +273,7 @@ a:hover .overlay-color {
   }
   /* 右上角社群icon ed*/
   
-  /* 右上角熱門景點*/
+
 
  
   @media (max-width:447px) {
@@ -323,10 +323,7 @@ header .bg {
   }
   .title{
     /* background: url(../images/title_desk.png) top no-repeat; */
-    /* min-width:466px; */
-    min-width:368px;
     min-width:466px;
-    /* height: 60px; */
     height: 76px;
     background: url(../images/title_desk.svg) top no-repeat;
     background-size: contain;
@@ -335,17 +332,11 @@ header .bg {
     align-items: center;
     position: relative;
     display: inline-block;
-    /* width: 100%; */
     color: #FFFFFF;
-    /* font-size: 48px; */
-    /* font-size: 48px; */
-    /* padding: 5px 10px; */
   }
   .title h1{
     font-size: 48px;
-    /* padding: 5px 10px; */
     display: inline-block;
-    /* height: 60px; */
     height: 76px;
     display: flex;
     justify-content: center;
@@ -371,7 +362,6 @@ header .bg {
  
         height: 225px;
         height: 306px;
-        /* background-size: auto; */
         background-size: cover;
         display: flex;
         align-items: center;
