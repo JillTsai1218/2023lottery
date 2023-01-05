@@ -227,7 +227,7 @@ a:hover .overlay-color {
     z-index: 1;
     display: flex;
     /* padding: 15px 40px; */
-    padding: 22px 40px;
+    padding: 24px 40px;
     box-sizing: border-box;
     overflow: hidden;
     align-items: center;
