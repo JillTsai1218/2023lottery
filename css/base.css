@@ -225,7 +225,7 @@ a:hover .overlay-color {
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     /* padding: 15px 40px; */
     padding: 24px 40px;
@@ -276,7 +276,12 @@ a:hover .overlay-color {
   /* 右上角熱門景點*/
 
  
-
+  @media (max-width:447px) {
+    /* banner換圖的斷點 */
+    .logo_box {
+      padding: 24px 40px;
+    }
+  }
   
   @media (max-width: 397px) {
     .logo_box .logo {
@@ -395,7 +400,7 @@ header .bg {
   }
 
 /* 主內容區塊 */
-  .frame_box{
+  main{
     margin-top: -110px;
   }
   /* 按鈕 */
@@ -424,7 +429,7 @@ header .bg {
     color: #FFFFFF;
   }
   @media (max-width:447px) {
-    .frame_box{
+    main{
         margin-top: -160px;
       }
   }
@@ -551,3 +556,17 @@ header .bg {
     }
 
   }
+
+
+  /*footer*/
+footer{margin-top:50px;width:100%;padding:20px 15px;background-color:#F9C644;overflow:hidden;color:#000000;text-align:center;box-sizing: border-box;}
+footer small{}
+footer .logo_box{margin-bottom:5px;}
+footer .logo_box li{width:30px;display:inline-block;vertical-align:top;padding-top:5px;margin-right:5px;}
+footer .logo_box li:first-child{width:80px;padding-top:0;margin-right:0;}
+
+@media (max-width:767px) {
+    footer{margin-top:80px;}
+    footer small{font-size:12px!important;} 
+}
+/*footer ed*/
