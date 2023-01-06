@@ -1,4 +1,11 @@
 $(function() {  
+    //banner需空出導覽列的高的margin-top
+    function header_height(){
+        let header_height=$('.logo_box').outerHeight();
+        $("header .bg").css({"margin-top":header_height+"px"});
+    }
+    header_height();
+    $(window).resize(function(){header_height();});
     function backgo(){
         var all_h=$(window).scrollTop() + $(window).height();
         var obj_h=$('footer').outerHeight()+10;

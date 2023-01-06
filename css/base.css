@@ -303,7 +303,7 @@ a:hover .overlay-color {
 
 
 header .bg {
-  margin-top: 61px;
+  /* margin-top: 61px; */
     background: url(../images/bg.png) top no-repeat;
     width: 100%;
     height: 164px;
@@ -391,7 +391,7 @@ header .bg {
   }
   @media (max-width:375px) {
     header .bg {
-      margin-top: 61px;
+      /* margin-top: 61px; */
       background: url(../images/bg_m.png) top no-repeat;
       width: 100%;
       height: 138px;
@@ -531,7 +531,12 @@ header .bg {
   }
   /* 威力彩 end  */
 
-  
+  /* 春節大紅包 */
+
+
+
+
+   /* 春節大紅包 end*/
   .frame_box .lottery_lists .lottery .list .special .small_title{
     position: absolute;
     top:-20px;
