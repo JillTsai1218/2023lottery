@@ -72,6 +72,7 @@ textarea:focus {
 select:focus {
   outline: 0;
 }
+
 html::-webkit-scrollbar {
   width: 3px;
   background: #000;
@@ -84,8 +85,7 @@ html::-webkit-scrollbar-track {
 }
 /* scrollbar */
 html::-webkit-scrollbar-thumb {
-  /* background: #54a8af; */
-  background: #000000;
+  background: #E15D34;
 }
 h1,
 h2,
@@ -150,10 +150,7 @@ a:hover .overlay-color {
 }
 /* pc & mo ed*/
 
-/* scrollbar */
-html::-webkit-scrollbar-thumb {
-  background: #E15D34;
-}
+
 /*--gotoTop--*/
 #back {
   text-align: center;
@@ -524,6 +521,17 @@ header .bg {
     position: relative;
     margin-right: 0px;
   }
+  /* 威力彩 */
+  .frame_box .lottery_lists.power .lottery .list .num{
+    background-color: #65E06A;
+  }
+  .frame_box .lottery_lists.power .lottery .list .special{
+    background-color: #E15D34;
+    color: #ffffff;
+  }
+  /* 威力彩 end  */
+
+  
   .frame_box .lottery_lists .lottery .list .special .small_title{
     position: absolute;
     top:-20px;
