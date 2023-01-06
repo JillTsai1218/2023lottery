@@ -533,9 +533,41 @@ header .bg {
 
   /* 春節大紅包 */
 
+  .frame_box .lottery_lists.red_envelope .lottery{
+    margin-bottom: 0px;
+  }
 
-
-
+  .frame_box .lottery_lists.red_envelope .lottery:nth-child(n) .list .num{
+    background-color:  #FBEF8A;
+  }
+  .frame_box .lottery_lists.red_envelope .lottery:nth-child(2n) .list .num{
+    background-color:  #FBDB8A;
+  }
+  .frame_box .lottery_lists.red_envelope .lottery .detail{
+    margin-top: 16px;
+  }
+  .frame_box .lottery_lists.red_envelope .lottery .detail ul li{
+    list-style: inside;
+    font-size: 12px;
+    font-weight: bolder;
+  }
+  @media (max-width: 1281px) {
+    .frame_box .lottery_lists.red_envelope .lottery .list.one{
+      flex-wrap:wrap;
+      row-gap: 16px;
+    }
+  }
+  @media (max-width: 767px) {
+    .frame_box .lottery_lists .lottery .list.one{
+      display: flex;
+     justify-content: flex-start;
+    }
+    /* .frame_box .lottery_lists .lottery .list .num{
+      width: 44px;
+      height: 43px;
+      font-size: 20px;
+    } */
+  }
    /* 春節大紅包 end*/
   .frame_box .lottery_lists .lottery .list .special .small_title{
     position: absolute;
