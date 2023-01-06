@@ -536,7 +536,15 @@ header .bg {
   .frame_box .lottery_lists.red_envelope .lottery{
     margin-bottom: 0px;
   }
-
+  .frame_box .lottery_lists.red_envelope .lottery:first-child .second_title{
+    margin-top: 16px;
+  }
+  .frame_box .lottery_lists.red_envelope .lottery .second_title{
+    font-size: 16px;
+  }
+  .frame_box .lottery_lists.red_envelope .lottery .list.multiple{
+  margin-top: 8px;
+  }
   .frame_box .lottery_lists.red_envelope .lottery:nth-child(n) .list .num{
     background-color:  #FBEF8A;
   }
@@ -557,16 +565,33 @@ header .bg {
       row-gap: 16px;
     }
   }
+  @media (max-width: 1080px) {
+    .frame_box .lottery_lists.red_envelope .lottery .list.multiple .num{
+      width: 44px;
+      height: 43px;
+      font-size: 20px;
+    }
+  }
   @media (max-width: 767px) {
     .frame_box .lottery_lists .lottery .list.one{
       display: flex;
      justify-content: flex-start;
     }
-    /* .frame_box .lottery_lists .lottery .list .num{
-      width: 44px;
-      height: 43px;
-      font-size: 20px;
+    .frame_box .lottery_lists.red_envelope .lottery .second_title{
+      font-size: 14px;
+    }
+    /* .frame_box .lottery_lists.red_envelope .lottery .list.multiple{
+      overflow-y: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      flex-wrap: nowrap;
     } */
+    .frame_box .lottery_lists.red_envelope .lottery .list.multiple .num{
+      margin-right: 14px;
+    }
+    .frame_box .lottery_lists.red_envelope .lottery .list.multiple .num:nth-child(9){
+      margin-right: 0px;
+    }
   }
    /* 春節大紅包 end*/
   .frame_box .lottery_lists .lottery .list .special .small_title{
