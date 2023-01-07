@@ -560,34 +560,34 @@ header .bg {
       font-weight: bolder;
     }
     @media (max-width: 1281px) {
-      .frame_box .lottery_lists.red_envelope .lottery .list.one{
+      .frame_box .lottery_lists.red_envelope .lottery .list{
         flex-wrap:wrap;
         row-gap: 16px;
       }
     }
     @media (max-width: 1080px) {
-      .frame_box .lottery_lists.red_envelope .lottery .list.multiple .num{
+      /* .frame_box .lottery_lists.red_envelope .lottery .list.multiple .num{
         width: 44px;
         height: 43px;
         font-size: 20px;
-      }
+      } */
     }
     @media (max-width: 767px) {
-      .frame_box .lottery_lists .lottery .list.one{
+      .frame_box .lottery_lists.red_envelope .lottery .list{
         display: flex;
        justify-content: flex-start;
       }
       .frame_box .lottery_lists.red_envelope .lottery .second_title{
         font-size: 14px;
       }
-      .frame_box .lottery_lists.red_envelope .lottery .list.multiple{
+      /* .frame_box .lottery_lists.red_envelope .lottery .list.multiple{
         justify-content: flex-start;
         overflow-y: auto;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
-      }
-      .frame_box .lottery_lists.red_envelope .lottery .list.multiple .num{
-        flex: 0 0 auto; /*讓圓不要照比例縮放*/
+      } */
+      /* .frame_box .lottery_lists.red_envelope .lottery .list.multiple .num{
+        flex: 0 0 auto; 
         width:44px; 
         max-width:44px; 
         height:43px; 
@@ -596,7 +596,7 @@ header .bg {
       }
       .frame_box .lottery_lists.red_envelope .lottery .list.multiple .num:nth-child(9){
         margin-right: 0px;
-      }
+      } */
     }
      /* 春節大紅包 end*/
   .frame_box .lottery_lists .lottery .list .special .small_title{
